@@ -2,8 +2,6 @@
 //  DefineUserScreen.swift
 //  HayatWalletTest
 //
-//  Created by Finartz on 7.08.2024.
-//
 
 import Foundation
 import UIKit
