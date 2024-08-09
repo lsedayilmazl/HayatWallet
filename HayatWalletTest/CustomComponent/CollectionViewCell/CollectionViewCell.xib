@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionViewCell" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="HayatWalletTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="363" height="404"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="363" height="404"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NiJ-Yd-Wwl">
+                        <rect key="frame" x="20" y="20.000000000000014" width="323" height="237.33333333333337"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="NiJ-Yd-Wwl" secondAttribute="height" multiplier="640:470" id="v9T-Ny-fNr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W5c-b4-ijX">
+                        <rect key="frame" x="20" y="266.33333333333331" width="323" height="26.333333333333314"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55E-JR-uMl">
+                        <rect key="frame" x="20" y="312.66666666666669" width="189" height="25"/>
+                        <color key="backgroundColor" red="0.32889897744098873" green="0.76942896839999997" blue="0.331988950532696" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="7Ui-dN-1vC"/>
+                        </constraints>
+                        <color key="tintColor" red="0.93288354259999995" green="0.93288354259999995" blue="0.93288354259999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Detayları Gör" cornerStyle="capsule">
+                            <backgroundConfiguration key="background" strokeWidth="0.0" strokeOutset="0.0"/>
+                            <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="NiJ-Yd-Wwl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="5P4-Ah-PkR"/>
+                <constraint firstItem="W5c-b4-ijX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Cwn-J0-XrO"/>
+                <constraint firstItem="W5c-b4-ijX" firstAttribute="top" secondItem="NiJ-Yd-Wwl" secondAttribute="bottom" constant="9" id="N7a-q4-PdH"/>
+                <constraint firstItem="NiJ-Yd-Wwl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="VRQ-gy-5jJ"/>
+                <constraint firstAttribute="trailing" secondItem="W5c-b4-ijX" secondAttribute="trailing" constant="20" id="XEe-jF-1ft"/>
+                <constraint firstItem="55E-JR-uMl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="dTg-Rl-qh8"/>
+                <constraint firstAttribute="trailing" secondItem="NiJ-Yd-Wwl" secondAttribute="trailing" constant="20" id="l38-gP-iZX"/>
+                <constraint firstAttribute="trailing" secondItem="55E-JR-uMl" secondAttribute="trailing" constant="154" id="mTl-7a-Pjy"/>
+                <constraint firstItem="55E-JR-uMl" firstAttribute="top" secondItem="W5c-b4-ijX" secondAttribute="bottom" constant="20" id="wO0-hA-M2t"/>
+            </constraints>
+            <size key="customSize" width="363" height="404"/>
+            <connections>
+                <outlet property="button" destination="55E-JR-uMl" id="CI0-fa-icJ"/>
+                <outlet property="imageView" destination="NiJ-Yd-Wwl" id="tQJ-dO-Pj5"/>
+                <outlet property="titleLabel" destination="W5c-b4-ijX" id="Wto-Ki-wZK"/>
+            </connections>
+            <point key="canvasLocation" x="359.5419847328244" y="13.380281690140846"/>
+        </collectionViewCell>
+    </objects>
+</document>
